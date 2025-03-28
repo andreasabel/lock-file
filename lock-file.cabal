@@ -1,7 +1,6 @@
-cabal-version:          >=1.10
+cabal-version:          1.18
 name:                   lock-file
 version:                0.7.1.0
-x-revision:             1
 synopsis:               Provide exclusive access to a resource using lock file.
 description:
   Provide exclusive access to a resource using lock file, which are files whose
@@ -35,7 +34,7 @@ tested-with:
   GHC == 8.0.2
 
 
-extra-source-files:
+extra-doc-files:
     ChangeLog.md
   , README.md
 
@@ -170,6 +169,7 @@ executable lock-file-example
 
     , lock-file
 
+  default-language:     Haskell2010
   ghc-options:          -Wall
   if flag(pedantic)
     ghc-options:
@@ -199,6 +199,7 @@ executable lock-file-example-pid-file
 
     , lock-file
 
+  default-language:     Haskell2010
   ghc-options:          -Wall
   if flag(pedantic)
     ghc-options:
